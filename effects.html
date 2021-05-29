@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>CSS-Lightbox: Translate Effect</title>
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="File reader"><span class="standard-text">home</span><span class="mobile-text">home</span></a></li>
+                <li><a href="slide.html" title="Slide Effect"><span class="standard-text">Slide Effect</span><span class="mobile-text">slide</span></a></li>
+                <li><a class="selected" href="effects.html" title="All Effects"><span class="standard-text">All Effects</span><span class="mobile-text">effects</span></a></li>
+                <li><a href="extra.html" title="Extra stuff"><span class="standard-text">Extra</span><span class="mobile-text">extra</span></a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>CSS-Lightbox: Translate Effect</h1>
+        </header>
+        <main class="">
+            <input type="radio" value="translate-left" name="effect" class="effect-input" />
+            <input type="radio" value="translate-right" name="effect" class="effect-input" />
+            <input type="radio" value="translate-top" name="effect" class="effect-input" />
+            
+            <p>This is a CSS only image lightbox implementation.</p>
+            <p>This example use the slide effect to simulate a slideshow-like animation.</p>
+            <div id="portfolio" class="portfolio">
+                <div id="portfolio-thumb-1" class="portfolio__item">
+                    <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/desert.jpg" alt="" />
+                    <div class="portfolio__desc">
+                        <h3 class="portfolio__title">This is lightbox 1 title</h3>
+                        <a href="#portfolio-item-1" class="buton">More Info</a>
+                    </div>
+                </div>
+            
+                <div id="portfolio-thumb-2" class="portfolio__item">
+                    <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/landscape2.jpg" alt="" />
+                    <div class="portfolio__desc">
+                        <h3 class="portfolio__title">This is lightbox 2 title</h3>
+                        <a href="#portfolio-item-2" class="buton">More Info</a>
+                    </div>
+                </div>
+            
+                <div id="portfolio-thumb-3" class="portfolio__item">
+                    <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/landscape3.jpg" alt="" />
+                    <div class="portfolio__desc">
+                        <h3 class="portfolio__title">This is lightbox 3 title</h3>
+                        <a href="#portfolio-item-3" class="buton">More Info</a>
+                    </div>
+                </div>
+                
+                <div id="portfolio-thumb-4" class="portfolio__item">
+                    <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/man-back.jpg" alt="" />
+                    <div class="portfolio__desc">
+                        <h3 class="portfolio__title">This is lightbox 4 title</h3>
+                        <a href="#portfolio-item-4" class="buton">More Info</a>
+                    </div>
+                </div>
+
+                <div id="portfolio-thumb-5" class="portfolio__item">
+                    <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/sparklers.jpg" alt="" />
+                    <div class="portfolio__desc">
+                        <h3 class="portfolio__title">This is lightbox 5 title</h3>
+                        <a href="#portfolio-item-5" class="buton">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-lightboxes slide-from-right">
+                <div id="portfolio-item-1" class="portfolio-lightbox">
+                    <div class="portfolio-lightbox__content">
+                        <a href="#portfolio-thumb-1" class="close"></a>
+                        <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/desert.jpg" alt="desert.jpg" />
+                        <h3 class="portfolio-lightbox__title">This is lightbox 1 title</h3>
+                        <p class="portfolio-lightbox__body">This is lightbox 1 description</p>
+                        <a href="#portfolio-item-1" class="nav__button prev-button">&lt;</a>
+                        <a href="#portfolio-item-2" class="nav__button next-button">&gt;</a>
+                    </div>
+                </div>
+                <div id="portfolio-item-2" class="portfolio-lightbox">
+                    <div class="portfolio-lightbox__content">
+                        <a href="#portfolio-thumb-2" class="close"></a>
+                        <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/landscape2.jpg" alt="landscape2.jpg" />
+                        <h3 class="portfolio-lightbox__title">This is lightbox 2 title</h3>
+                        <p class="portfolio-lightbox__body">This is lightbox 2 description</p>
+                        <a href="#portfolio-item-1" class="nav__button prev-button">&lt;</a>
+                        <a href="#portfolio-item-3" class="nav__button next-button">&gt;</a>
+                    </div>
+                </div>
+                <div id="portfolio-item-3" class="portfolio-lightbox">
+                    <div class="portfolio-lightbox__content">
+                        <a href="#portfolio-thumb-3" class="close"></a>
+                        <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/landscape3.jpg" alt="landscape3.jpg" />
+                        <h3 class="portfolio-lightbox__title">This is lightbox 3 title</h3>
+                        <p class="portfolio-lightbox__body">This is the lightbox 3 description</p>
+                        <a href="#portfolio-item-2" class="nav__button prev-button">&lt;</a>
+                        <a href="#portfolio-item-4" class="nav__button next-button">&gt;</a>
+                    </div>
+                </div>
+                <div id="portfolio-item-4" class="portfolio-lightbox">
+                    <div class="portfolio-lightbox__content">
+                        <a href="#portfolio-thumb-4" class="close"></a>
+                        <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/man-back.jpg" alt="man-back.jpg" />
+                        <h3 class="portfolio-lightbox__title">This is lightbox 4 title</h3>
+                        <p class="portfolio-lightbox__body">This is the lightbox 4 description</p>
+                        <a href="#portfolio-item-3" class="nav__button prev-button">&lt;</a>
+                        <a href="#portfolio-item-5" class="nav__button next-button">&gt;</a>
+                    </div>
+                </div>
+                <div id="portfolio-item-5" class="portfolio-lightbox">
+                    <div class="portfolio-lightbox__content">
+                        <a href="#portfolio-thumb-5" class="close"></a>
+                        <img src="http://localhost/www/PBD-PROJECTS/_PRODUCTION/__assets/img/sparklers.jpg" alt="sparklers.jpg" />
+                        <h3 class="portfolio-lightbox__title">This is lightbox 5 title</h3>
+                        <p class="portfolio-lightbox__body">This is the lightbox 5 description</p>
+                        <a href="#portfolio-item-4" class="nav__button prev-button">&lt;</a>
+                        <a href="#portfolio-item-5" class="nav__button next-button">&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
